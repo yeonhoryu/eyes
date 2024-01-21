@@ -1,0 +1,28 @@
+Project: Eyes Exercise
+Date: Jan 21, 2024
+
+Description: This project is how to follow mouse movement.
+   
+  In JavaScript, events are actions that happen on a web page. They can be anything from a mouse moving to a user typing in some text. 
+  Events happen to most elements on the DOM. These events are a good way to bind a code to user actions. 
+
+  Mouse events are a popular way to bind the DOM elements to events.
+  This project operate to bind mouse movement and the two eyes on the web page.
+
+How to run:
+1. User operation
+   - The mouse movement event is used to updated the position of the "eye" element displayed on the page. 
+2. Program specification. 
+   2-1. index.html: This program defined the class of Eyes/Eyes2, eye, and balls on the <body> tag.  
+                    Each classes consist of hieratically design, the Eyes/Eyes2 assigned to grandfather level, the eye assigned parent level, and the balls worked to the child level.
+                    The mouse movement assigned only one class of balls, therefore user's mouse movement reflected two class of Eyes/Eyes2.
+   2-2. styles.css: This program designed each of classes tag contents. 
+   2-3. eyes.js:    This program follow mouse movement events. The main code is bellows,
+
+                    const balls = document.getElementsByClassName('ball');
+                    document.onmousemove = (event) => {
+                        const x = (event.clientX * 100) / window.innerWidth + '%';
+                        const y = (event.clientY * 100) / window.innerHeight + '%';
+                    }
+3. Roadmap of future improvements:
+4. License information: 
