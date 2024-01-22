@@ -10,9 +10,9 @@ document.onmousemove = (event) => {
       balls[i].style.transform = 'translate(-' + x + ',-' + y + ')';
    }
 
-   const eye2 = document.createElement('div');
-   eye2.className = 'eyes';
-   document.body.appendChild(eye2);
+   // const eye2 = document.createElement('div');
+   // eye2.className = 'eyes';
+   // document.body.appendChild(eye2);
 };
 
 
